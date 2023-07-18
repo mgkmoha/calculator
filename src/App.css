@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+/**Styling the Display**/
+
+.grid-container-display {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color:#000000;
+    border: #282c34 1px solid;
+    width: 550px;
+    height: 150px;
+}
+
+
+
+/**Styling the Button**/
+
+.grid-container-buttons{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color:rgba(255, 255, 255, 0.8);
+  border: #000 1px solid;
+  width: 550px;
+  height: 560px;
+}
+
+.grid-item-button {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: auto;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-zero {
+  grid-column: 1/span 2;
+}
