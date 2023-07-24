@@ -1,76 +1,100 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator-container {
+  width: 320px;
+  height: 400px;
+  margin: 200px;
   display: flex;
   flex-direction: column;
+}
+
+.display {
+  background-color: #ccc;
+  width: 320px;
+  min-height: 80px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/**Styling the Display**/
-
-.grid-container-display {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color:#000000;
-    border: #282c34 1px solid;
-    width: 550px;
-    height: 150px;
-}
-
-
-
-/**Styling the Button**/
-
-.grid-container-buttons{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  background-color:rgba(255, 255, 255, 0.8);
-  border: #000 1px solid;
-  width: 550px;
-  height: 560px;
-}
-
-.grid-item-button {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: auto;
-  font-size: 30px;
+}
+
+.button {
+  width: 320px;
+  height: 320px;
+  display: flex;
+}
+
+.left-side {
+  flex: 75%;
+}
+
+.right-side {
+  flex: 25%;
+}
+
+.numbers {
+  width: 240px;
+  height: 240px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#button-container {
+  width: 238px;
+  height: 78px;
+  display: flex;
+}
+
+#seeResult {
+  width: 238px;
+  height: 78px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 159, 89);
+}
+
+#clearResult {
+  width: 78px;
+  height: 78px;
+  border: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 150, 110);
+}
+
+#backSpaceDelete {
+  width: 78px;
+  height: 78px;
+  border: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 150, 110);
+}
+
+#individualNumber {
+  width: 78px;
+  height: 78px;
+  background-color: blanchedalmond;
+  border: 1px solid #ccc;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.item-zero {
-  grid-column: 1/span 2;
+
+#individualOperators {
+  width: 78px;
+  height: 78px;
+  background-color: rgb(243, 209, 158);
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
