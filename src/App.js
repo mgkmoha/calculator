@@ -55,26 +55,22 @@ function App() {
 
         <div className="button">
           <div className="left-side">
-            {/* <div id='button-container'>
-              <div id="clearResult">AC</div>
-              <div id="backSpaceDelete">C</div> */}
               <div id="seeResult" onClick={performCalculation}>=</div>
               <div className='numbers'>
                 {numbers.map((val)=>{
                   return <div 
-                  id="individualNumber" 
+                  className="individualNumber" 
                   onClick={()=> {
                     clickNumbers(val); 
                   }}>{val}</div>
                 })}
               </div>
-            {/* </div> */}
           </div>
 
           <div className="right-side">
             {operators.map((val)=>{
               return <div 
-              id="individualOperators" 
+              className="individualOperators" 
               onClick={()=> {
                 clickOperations(val);
               }}>{val}</div>

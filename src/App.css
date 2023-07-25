@@ -78,7 +78,7 @@
   background-color: rgb(177, 150, 110);
 }
 
-#individualNumber {
+.individualNumber {
   width: 78px;
   height: 78px;
   background-color: blanchedalmond;
@@ -89,7 +89,7 @@
 }
 
 
-#individualOperators {
+.individualOperators {
   width: 78px;
   height: 78px;
   background-color: rgb(243, 209, 158);
