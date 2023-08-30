@@ -10,6 +10,47 @@ function App() {
   const [previousNumber, setPreviousNumber] = useState("")
   const [operator, setOperator] = useState("")
   const [currentNumber, setCurrentNumber] = useState("")
+  const [result, setResult] = useState("")
+
+    // useEffect(() => {
+    //   function performRealCalculation(){
+    //     if (previousNumber !== null  && currentNumber !== null && operator !== null) {
+    //       switch(result){
+    //         case operator === "+":
+    //           setResult(Number(previousNumber) + Number(currentNumber))
+    //           console.log(result);
+    //           break;
+    //         case operator === "-":
+    //           setResult(Number(previousNumber) - Number(currentNumber))
+    //           console.log(result);
+    //           break;
+    //         case operator === "x":
+    //           setResult(Number(previousNumber) * Number(currentNumber))
+    //           console.log(result);
+    //           break;
+    //         case operator === "/":
+    //           setResult(Number(previousNumber) / Number(currentNumber))
+    //           console.log(result);
+    //           break;
+    //         default:
+    //           return null
+    //       }
+    //       console.log(result);
+    //     } else 
+    //       return null
+
+    //     console.log(result);
+    //   }
+
+    //   performRealCalculation();
+    //   console.log(previousNumber);
+    //   console.log(operator);
+    //   console.log(currentNumber);
+    //   console.log(result);
+
+    // }, [previousNumber, currentNumber, operator, result]);
+
+
 
     useEffect(()=> {
       if (previousNumber && currentNumber && operator) {
@@ -20,20 +61,30 @@ function App() {
         switch(operator){
           case "+":
             setDisplay(Number(previousNumber) + Number(currentNumber))
+            // console.log("op5", result);
             break;
           case "-":
             setDisplay(Number(previousNumber) - Number(currentNumber))
+            // console.log("op6", result);
             break;
           case "x":
             setDisplay(Number(previousNumber) * Number(currentNumber))
+            // console.log("op7", result);
             break;
           case "÷":
             setDisplay(Number(previousNumber) / Number(currentNumber))
+            // console.log("op8", result);
             break;
           default:
             return null
         }
+          // console.log("op1",previousNumber);
+          // console.log("op2",operator);
+          // console.log("op3",currentNumber);
+          // console.log("op4",result);
+          // console.log(localStorage);
     }
+
 
   function clickOperators(val){
     setPreviousNumber(display);
@@ -48,9 +99,9 @@ function App() {
 
  function performCalculation(){
     var splitDisplay = display.split(operator);
-    console.log(splitDisplay);
     setCurrentNumber(splitDisplay[1]); 
-    console.log(currentNumber);
+    // performRealCalculation();
+    // console.log(currentNumber);
   }
 
   return (
