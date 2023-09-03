@@ -50,31 +50,40 @@
   display: flex;
 }
 
-#seeResult {
+.clear-result-container{
   width: 238px;
   height: 78px;
   border: 1px solid #ccc;
   display: flex;
+}
+
+#seeResult {
+  width: 78px;
+  height: 78px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ccc;
   background-color: rgb(197, 159, 89);
 }
 
 #clearResult {
   width: 78px;
   height: 78px;
-  border: 1px solid #ccc;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ccc;
   background-color: rgb(177, 150, 110);
 }
 
 #backSpaceDelete {
   width: 78px;
   height: 78px;
-  border: 1px solid #ccc;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ccc;
   background-color: rgb(177, 150, 110);
 }
 

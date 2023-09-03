@@ -1,3 +1,14 @@
+  const [display, setDisplay] = useState(JSON.parse(localStorage.getItem('display')));
+  const [previousNumber, setPreviousNumber] = useState("")
+  const [operator, setOperator] = useState("")
+  const [currentNumber, setCurrentNumber] = useState("")
+
+  useEffect(()=> {
+    if (previousNumber && currentNumber && operator) {
+    performRealCalculation();}
+    localStorage.setItem('display', JSON.stringify(display));
+  }, [previousNumber, currentNumber, operator, display]);
+
 import { useEffect, useState } from 'react';
 import './App.css';
 
